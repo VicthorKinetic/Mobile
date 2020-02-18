@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="jqm/jquery.mobile-min.css">
+        <title>Blank App Designer Cordova Web App Project Template</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+        <!--
+  * The "meta viewport" tag (below) helps your app size appropriately to a device's ideal viewport.
+  * Note that Windows device viewports work better when initialized using the @viewport CSS rule.
+  * For a quick overview of "meta viewport" and @viewport, see this article:
+  *   http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag
+  * To see how it works, try your app on a real device with and without a "meta viewport" tag.
+  * Additional useful references include:
+  *   http://www.quirksmode.org/mobile/viewports.html
+  *   http://www.quirksmode.org/mobile/metaviewport/devices.html
+  *   https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+-->
+
+        <!-- <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"> -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
+
+        <style>
+            /* following three (cascaded) are equivalent to above three meta viewport statements */
+            /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html */
+            /* see http://dev.w3.org/csswg/css-device-adapt/ */
+                @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+                @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+                /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
+        </style>
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work below -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+
+        <!-- Recommended location for your JavaScript libraries -->
+        <!-- These library references (below) are just examples to give you the general idea... -->
+        <!-- <script src="lib/mc/hammer.js"></script> -->
+        <!-- <script src="lib/ft/fastclick.js"></script> -->
+
+        <!--
+  * cordova.js is a phantom lib for "Cordova HTML5 web app," it does nothing in a "Standard HTML5 web app"
+  * Seeing a "Failed to load resource: net::ERR_FILE_NOT_FOUND" message caused by this "cordova.js" script?
+  * The cordova.js script is required if you convert your "Standard HTML5" project into a "Cordova" project.
+  * You can safely ignore the error or comment out this line if you will not be developing a Cordova app.
+-->
+        <script src="cordova.js" id="xdkJScordova_"></script>
+
+        <script src="js/app.js"></script>
+        <!-- for your event code, see README and file comments for details -->
+        <script src="js/init-app.js"></script>
+        <!-- for your init code, see README and file comments for details -->
+        <script src="xdk/init-dev.js"></script>
+        <!-- normalizes device and document ready events, see file for details -->
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="jqm/jquery.mobile-min.js" data-ver="0"></script>
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="xdk/ad/jqm_subpage.js"></script>
+    </head>
+
+    <body>
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work above -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+        <div class="upage" id="mainpage" data-role="page">
+            <div class="upage-outer">
+                <div data-role="header" class="container-group inner-element uib_w_2" data-uib="jquery_mobile/header" data-ver="0" data-theme="b">
+                    <h1>O Que Eu Quero</h1>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col" id="page_38_95"></div>
+                <div data-role="footer" data-position="fixed" class="container-group inner-element uib_w_1" data-uib="jquery_mobile/footer" data-ver="0">
+                    <h1></h1>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div data-role="footer" data-position="fixed" class="container-group inner-element uib_w_3" data-uib="jquery_mobile/footer" data-ver="0">
+                    <h1></h1>
+                    <div class="widget-container wrapping-col single-centered">
+                        <div data-role="controlgroup" class="uib-jqm-flex widget uib_w_4 d-margins" data-uib="jquery_mobile/button_group" data-ver="0" data-type="horizontal">
+                            <a class="widget uib_w_5" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="info" data-theme="b">Info</a><a class="widget uib_w_6" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="home"
+                            data-theme="b">Casa</a><a class="widget uib_w_7" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="search" data-theme="b">Procurar</a>
+                        </div>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div id="Casa" class="upage-content vertical-col hidden">
+                    <div class="grid grid-pad urow uib_row_3 row-height-3" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_3 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="tarea widget uib_w_10 d-margins" data-uib="media/text" data-ver="0" name="uib_w_10">
+                                    <div class="widget-container left-receptacle"></div>
+                                    <div class="widget-container right-receptacle"></div>
+                                    <div class="text-container"></div>
+                                </div>
+                                <div class="widget uib_w_11 ui-content no_wrap outset-margin d-margins" data-uib="jquery_mobile/listview" data-ver="0">
+                                    <ul data-role="listview">
+                                        <li class="widget uib_w_12" data-uib="jquery_mobile/listitem" data-ver="0" data-theme="b" id="lstCadastro" data-icon="user"><a href="lstCadastro"><span>Cadastro</span></a>
+                                        </li>
+                                        <li class="widget uib_w_13" data-uib="jquery_mobile/listitem" data-ver="0" id="lstListar" data-theme="b" data-icon="bullets"><a href="lstListar"><span>Listar</span></a>
+                                        </li>
+                                        <li class="widget uib_w_14" data-uib="jquery_mobile/listitem" data-ver="0" id="lstRemover" data-theme="b" data-icon="delete"><a href="lstRemover"><span>Remover</span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+                </div>
+                <div id="Infurmacao" class="upage-content vertical-col hidden">
+                    <div class="grid grid-pad urow uib_row_2 row-height-2" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_2 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="tarea widget uib_w_9 d-margins" data-uib="media/text" data-ver="0" name="uib_w_9">
+                                    <div class="widget-container left-receptacle"></div>
+                                    <div class="widget-container right-receptacle"></div>
+                                    <div class="text-container">
+                                        <p>One thing, I don't know why it doesn't even matter how hard you tried, keep that in mind I designed this rhyme to explain in due time, all I know, is that time is a valuable thing, watch the time fly as the pendulum
+                                            swings, watch it count down to the end of the day, the clock ticks life away, so unreal, he didn't look out below, watch the time go right out the window, trying to hold on, I didn't even know I wasted it all
+                                            just to watch you got, I kept everything inside and even though I tried, it all fell apart, what it makes of me will eventually be a memory of the time that I tried so hard.&nbsp;</p>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+                </div>
+                <div id="Prucurar" class="upage-content vertical-col hidden">
+                    <div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="tarea widget uib_w_8 d-margins" data-uib="media/text" data-ver="0" name="uib_w_8">
+                                    <div class="widget-container left-receptacle"></div>
+                                    <div class="widget-container right-receptacle"></div>
+                                    <div class="text-container">
+                                        <p>His palms spaghetti, knees weak arms&nbsp;spaghetti, there's vomit on his sweater&nbsp;spaghetti, mom's&nbsp;spaghetti, he's nervous, but on the surface he looks calm&nbsp;spaghetti to drop bombs, but he keeps on&nbsp;spaghetti
+                                            what he wrote down the whole crowd goes&nbsp;spaghetti he opens his mouth but&nbsp;spaghetti won't come out, he's chocking now, everybody's joking now,&nbsp;spaghetti's run out, time's up, over, PLOW.</p>
+                                    </div>
+                                </div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+                </div>
+                <div id="Cadastro" class="upage-content vertical-col left hidden">
+                    <div class="grid grid-pad urow uib_row_4 row-height-4" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_4 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="table-thing with-label widget uib_w_16 d-margins" data-uib="jquery_mobile/input" data-ver="0">
+                                    <label class="narrow-control label-inline" for="txtNome">Nome</label>
+                                    <input class="wide-control" placeholder="Seu Nome" type="text" id="txtNome">
+                                </div>
+                                <div class="table-thing with-label widget uib_w_17 d-margins" data-uib="jquery_mobile/input" data-ver="0">
+                                    <label class="narrow-control label-inline" for="txtEmail">Email</label>
+                                    <input class="wide-control" placeholder="Seu Email" type="email" id="txtEmail">
+                                </div>
+
+                                <a class="widget uib_w_15 d-margins" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-theme="b">Gravar</a><span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

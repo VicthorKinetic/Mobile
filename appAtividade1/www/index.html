@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+    <!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="jqm/jquery.mobile-min.css">
+        <title>Blank App Designer Cordova Web App Project Template</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+        <!--
+  * The "meta viewport" tag (below) helps your app size appropriately to a device's ideal viewport.
+  * Note that Windows device viewports work better when initialized using the @viewport CSS rule.
+  * For a quick overview of "meta viewport" and @viewport, see this article:
+  *   http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag
+  * To see how it works, try your app on a real device with and without a "meta viewport" tag.
+  * Additional useful references include:
+  *   http://www.quirksmode.org/mobile/viewports.html
+  *   http://www.quirksmode.org/mobile/metaviewport/devices.html
+  *   https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+-->
+
+        <!-- <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"> -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
+
+        <style>
+            /* following three (cascaded) are equivalent to above three meta viewport statements */
+            /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html */
+            /* see http://dev.w3.org/csswg/css-device-adapt/ */
+                @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+                @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+                /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
+            #txtDesenvolvedores
+            {
+                color:black;
+            }
+        </style>
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work below -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+
+        <!-- Recommended location for your JavaScript libraries -->
+        <!-- These library references (below) are just examples to give you the general idea... -->
+        <!-- <script src="lib/mc/hammer.js"></script> -->
+        <!-- <script src="lib/ft/fastclick.js"></script> -->
+
+        <!--
+  * cordova.js is a phantom lib for "Cordova HTML5 web app," it does nothing in a "Standard HTML5 web app"
+  * Seeing a "Failed to load resource: net::ERR_FILE_NOT_FOUND" message caused by this "cordova.js" script?
+  * The cordova.js script is required if you convert your "Standard HTML5" project into a "Cordova" project.
+  * You can safely ignore the error or comment out this line if you will not be developing a Cordova app.
+-->
+        <script src="cordova.js" id="xdkJScordova_"></script>
+
+        <script src="js/app.js"></script>
+        <!-- for your event code, see README and file comments for details -->
+        <script src="js/init-app.js"></script>
+        <!-- for your init code, see README and file comments for details -->
+        <script src="xdk/init-dev.js"></script>
+        <!-- normalizes device and document ready events, see file for details -->
+        <script type="application/javascript" src="lib/jquery.min.js"></script>
+        <script type="application/javascript" src="jqm/jquery.mobile-min.js" data-ver="0"></script>
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="xdk/ad/jqm_subpage.js"></script>
+    </head>
+
+    <body>
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work above -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+        <div class="upage Background" id="mainpage" data-role="page">
+            <div class="upage-outer">
+                <div data-role="header" class="container-group inner-element uib_w_1" data-uib="jquery_mobile/header" data-ver="0" data-theme="b">
+                    <h1>Banco de Dados</h1>
+                    <div class="widget-container wrapping-col single-centered"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col left"></div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+                <div class="upage-content ac0 content-area vertical-col left" id="page_44_19">
+
+                </div>
+                <div id="uib_cadastro" class="upage-content vertical-col left hidden">
+                    <div class="grid grid-pad urow uib_row_1 row-height-1" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_1 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div class="table-thing with-label widget uib_w_12 d-margins" data-uib="jquery_mobile/input" data-ver="0">
+                                    <label class="narrow-control label-inline" for="txtNome">Nome</label>
+                                    <input class="wide-control" placeholder="Digite seu nome" type="text" id="txtNome">
+                                </div>
+                                <div class="table-thing with-label widget uib_w_13 d-margins" data-uib="jquery_mobile/input" data-ver="0">
+                                    <label class="narrow-control label-inline" for="txtIdade">Idade</label>
+                                    <input class="wide-control" placeholder="Digite sua idade" type="text" id="txtIdade">
+                                </div>
+                                <div class="table-thing with-label widget uib_w_14 d-margins" data-uib="jquery_mobile/input" data-ver="0">
+                                    <label class="narrow-control label-inline" for="txtSexo">Sexo</label>
+                                    <input class="wide-control" placeholder="Digite seu sexo ( ͡° ͜ʖ ͡°)" type="text" id="txtSexo">
+                                </div>
+                                <div class="table-thing with-label widget uib_w_15 d-margins" data-uib="jquery_mobile/input" data-ver="0">
+                                    <label class="narrow-control label-inline" for="txtReligiao">Religião</label>
+                                    <input class="wide-control" placeholder="Digite seu deus" type="text" id="txtReligiao">
+                                </div>
+                                <div class="table-thing with-label widget uib_w_16 d-margins" data-uib="jquery_mobile/input" data-ver="0">
+                                    <label class="narrow-control label-inline" for="txtSenha">Senha</label>
+                                    <input class="wide-control" type="text" placeholder="Digite sua senha" id="txtSenha">
+                                </div><a class="widget uib_w_17 d-margins" data-uib="jquery_mobile/button" data-ver="0" data-role="button" id="btnSalvar" data-theme="b" data-icon="plus">Salvar</a>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+                </div>
+                <div id="uib_exibir" class="upage-content vertical-col left hidden"><a class="widget uib_w_19 d-margins" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-theme="b" data-icon="bars" id="btnExibir">Exibir</a>
+
+                    <div class="grid grid-pad urow uib_row_2 row-height-2" data-uib="layout/row" data-ver="0">
+                        <div class="col uib_col_2 col-0_12-12" data-uib="layout/col" data-ver="0">
+                            <div class="widget-container content-area vertical-col">
+                                <div id="resposta"></div>
+                                <span class="uib_shim"></span>
+                            </div>
+                        </div>
+                        <span class="uib_shim"></span>
+                    </div>
+                </div>
+                <div id="uib_desenvolvedores" class="upage-content vertical-col left hidden">
+                    <div class="tarea widget uib_w_18 d-margins" data-uib="media/text" data-ver="0" name="uib_w_18" id="txtDesenvolvedores">
+                        <div class="widget-container left-receptacle"></div>
+                        <div class="widget-container right-receptacle"></div>
+                        <div class="text-container">
+                            <h2 style="font-style:italic;"><tt><strong>Desenvolvedores: </strong></tt></h2>
+
+                            <h2 style="font-style:italic;"><tt><strong>Alexandre Azevedo de Albuquerque</strong></tt></h2>
+
+                            <h2 style="font-style:italic;"><tt><strong>Victhor Capasso Peraino</strong></tt></h2>
+                        </div>
+                    </div>
+                </div>
+                <div data-role="footer" data-position="fixed" class="container-group inner-element uib_w_6" data-uib="jquery_mobile/footer" data-ver="0" data-theme="b">
+                    <h1></h1>
+                    <div class="widget-container wrapping-col single-centered">
+                        <div data-role="controlgroup" class="uib-jqm-flex widget uib_w_7 d-margins" data-uib="jquery_mobile/button_group" data-ver="0" data-type="horizontal">
+                            <a class="widget uib_w_8" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="home" id="btnHome">Home</a><a class="widget uib_w_11 d-margins" data-uib="jquery_mobile/button" data-ver="0" data-role="button"
+                            data-icon="edit" id="btnRegister">Register</a><a class="widget uib_w_9" data-uib="jquery_mobile/button" data-ver="0" data-role="button" data-icon="eye" id="btnView">View</a><a class="widget uib_w_10" data-uib="jquery_mobile/button"
+                            data-ver="0" data-role="button" data-icon="user" id="btnDevelopers">Developer</a>
+                        </div>
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col left">
+                    </div>
+                    <div class="widget-container content-area horiz-area wrapping-col right"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
